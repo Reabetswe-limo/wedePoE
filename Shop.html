@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>PrimeFit Gym - Supplement Shop</title>
+    <meta name="description" content="Browse PrimeFit's affordable catalog of sports supplements and training gear in Bloemfontein. Filter products in real time and enjoy fast local delivery.">
+    <meta name="keywords" content="Buy Supplements Bloemfontein, Affordable Whey Protein, Creatine South Africa, Gym Gear Students">
+    <meta name="author" content="Reabetswe Limo">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header>
+        <strong>PrimeFit Gym</strong>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="membership.html">Memberships</a></li>
+                <li><a href="shop.html">Supplement Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Product Catalog Section -->
+    <main>
+        <section>
+            <h2>Supplement Store & Gym Gear</h2>
+            <p>Affordable, authentic, laboratory-tested workout lines with rapid local delivery inside the Bloemfontein region.</p>
+            
+            <!-- Part 3 PoE Rubric Requirement: Dynamic Real-time Live Search Box Filter Component -->
+            <div style="margin: 20px 0;">
+                <label for="productSearch" style="font-weight: bold;">Filter Products: </label>
+                <input type="text" id="productSearch" placeholder="Type to filter supplements or gear..." style="padding: 8px; width: 100%; max-width: 350px;">
+            </div>
+
+            <!-- Grouped Catalogue Wrapping Division -->
+            <div id="productsCatalog">
+                
+                <!-- Product Item 1 -->
+                <article class="product-card" data-name="premium whey protein supplement powder">
+                    <!-- Lightbox Trigger Image Matrix Assignment -->
+                    <img src="images/whey-thumb.jpg" alt="Premium Whey Protein Lean Matrix Tub" class="lightbox-trigger" data-full="images/whey-large.jpg" style="width: 120px; cursor: pointer; display: block; margin-bottom: 5px;">
+                    <h3>Premium Whey Protein</h3>
+                    <p>Category: Protein Supplement</p>
+                    <p>High-grade rapid absorption lean protein matrix for muscle recovery and tissue reconstruction.</p>
+                    <p><strong>Price: R450.00</strong></p>
+                    <button type="button">Add To Basket</button>
+                </article>
+
+                <br><hr><br>
+
+                <!-- Product Item 2 -->
+                <article class="product-card" data-name="pure micronized creatine supplement powder">
+                    <img src="images/creatine-thumb.jpg" alt="Pure Micronized Performance Creatine Powder Tub" class="lightbox-trigger" data-full="images/creatine-large.jpg" style="width: 120px; cursor: pointer; display: block; margin-bottom: 5px;">
+                    <h3>Pure Micronized Creatine</h3>
+                    <p>Category: Creatine Supplement</p>
+                    <p>Pure physical performance compound to maximize muscle cell hydration and explosive workout energy.</p>
+                    <p><strong>Price: R220.00</strong></p>
+                    <button type="button">Add To Basket</button>
+                </article>
+
+                <br><hr><br>
+
+                <!-- Product Item 3 -->
+                <article class="product-card" data-name="ergonomic lifting gloves training gear">
+                    <img src="images/gloves-thumb.jpg" alt="Ergonomic Heavy Lifting Mesh Gym Gloves" class="lightbox-trigger" data-full="images/gloves-large.jpg" style="width: 120px; cursor: pointer; display: block; margin-bottom: 5px;">
+                    <h3>Ergonomic Lifting Gloves</h3>
+                    <p>Category: Training Gear</p>
+                    <p>Reinforced double-stitch mesh scaffolding to protect palms during heavy compound lifting sessions.</p>
+                    <p><strong>Price: R150.00</strong></p>
+                    <button type="button">Add To Basket</button>
+                </article>
+
+            </div>
+        </section>
+
+        <div id="galleryLightbox" class="lightbox-overlay" style="display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); justify-content: center; align-items: center; color: #fff;">
+            <span id="closeLightbox" style="position: absolute; top: 20px; right: 35px; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
+            <div style="text-align: center; max-width: 80%;">
+                <img id="lightboxImage" src="" alt="Expanded Image View" style="max-height: 70vh; max-width: 100%; border: 3px solid #fff;">
+                <div id="lightboxCaption" style="margin-top: 15px; font-size: 1.2rem; font-weight: bold;"></div>
+            </div>
+        </div>
+    </main>
+
+    <hr>
+
+    <!-- Footer Information -->
+    <footer>
+        <p><a href="https://wa.me" target="_blank">Contact Us via WhatsApp Support</a></p>
+        <p>&copy; 2026 PrimeFit Gym.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
